@@ -5,15 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Joe Zhang">
     <meta name="description" content="Joe&#39;s Home Page">
-    <meta name="keywords" content="blog,developer">
+    <meta name="keywords" content="blog">
 
     <title>WEM</title>
     <link rel="canonical" href="https://wem.me/">
-    <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" type="image/png" href="https://icoding.net/favicon.ico">
 </head>
-<body class="">
-<script type="text/javascript" src="./js/canvas-nest.min.js"></script>
+<body>
 <main class="wrapper">
     <nav class="navigation">
         <section class="container">
@@ -47,6 +46,27 @@
     </div>
 
 </main>
-
+<canvas class="background"></canvas>
+<script src="js/particles.min.js"></script>
+<script>
+    window.onload = function() {
+        Particles.init({
+            selector: '.background',
+            color: ['#DA0463','#E67E22','#3498DB','#8E44AD','#C0392B','#2ECC71'],
+            connectParticles: false,
+            sizeVariations: 8,
+            speed: 0.7,
+            maxParticles: 100,
+            responsive: [{
+                breakpoint: 100,
+                options: {
+                    color: '#00C9B1',
+                    maxParticles: 100,
+                    connectParticles: false
+                }
+            }]
+        })
+    };
+</script>
 </body>
 </html>
