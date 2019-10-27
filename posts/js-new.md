@@ -113,3 +113,5 @@ function newOperator(Constr, args) {
     return thisValue;
 }
 ```
+
+--EOF--
